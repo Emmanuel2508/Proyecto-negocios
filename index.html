@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ariadna Labs — Estudio de Desarrollo de Software</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MVJP47S3"></script>
 <script>
@@ -18,9 +19,210 @@
   gtag('js', new Date());
 </script>
 <body>
-    <div>
-        <h1>Hola mundo!</h1>
-        <b>jiji jaja</b>
+  <header>
+    <div class="container nav">
+      <h1>Pagina web creada con inteligencia artificial</h1>
     </div>
+    <div class="container nav">
+      <a href="#" class="brand">
+        <span class="brand-dot"></span>
+        <span>Ariadna Labs</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a href="#contacto" class="btn btn-primary">Cotizar proyecto</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container">
+      <div>
+        <span class="badge">Startup de Desarrollo de Software</span>
+        <h1>Construimos <span>aplicaciones web y móviles</span> rápidas y listas para crecer</h1>
+        <p>
+          En Ariatna Lab ayudamos a startups y empresas a lanzar productos digitales limpios,
+          escalables y centrados en el usuario, desde el MVP hasta la operación diaria.
+        </p>
+        <div class="hero-actions">
+          <a href="#portafolio" class="btn btn-primary">Ver aplicaciones</a>
+          <a href="#nosotros" class="btn btn-secondary">Conocer el equipo</a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <h2>Enfoque de entrega continua</h2>
+        <p>Código modular, interfaces claras y lanzamientos iterativos cada semana.</p>
+        <div class="metrics">
+          <div class="metric">
+            <strong>+18</strong>
+            <span>Apps lanzadas</span>
+          </div>
+          <div class="metric">
+            <strong>99.9%</strong>
+            <span>Disponibilidad</span>
+          </div>
+          <div class="metric">
+            <strong>4 sem</strong>
+            <span>Promedio MVP</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Sobre la empresa -->
+    <section id="nosotros" class="container">
+      <div class="section-header">
+        <h2>Quiénes somos</h2>
+        <p>Un equipo multidisciplinario enfocado en resolver problemas reales con tecnología práctica.</p>
+      </div>
+      <div class="about-grid">
+        <article class="card">
+          <h3>Producto y UX</h3>
+          <p>Diseñamos flujos intuitivos y pantallas sin fricción para que tus usuarios entiendan tu app desde el primer minuto.</p>
+        </article>
+        <article class="card">
+          <h3>Arquitectura Web y Cloud</h3>
+          <p>Desarrollamos APIs rápidas, bases de datos confiables y despliegues automatizados pensados para crecer sin reescribir todo.</p>
+        </article>
+        <article class="card">
+          <h3>Acompañamiento Cercano</h3>
+          <p>Comunicación directa, avances visibles cada sprint y documentación clara para que mantengas el control de tu producto.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Portafolio de aplicaciones en la misma vista -->
+    <section id="portafolio" class="container">
+      <div class="section-header">
+        <h2>Portafolio de aplicaciones</h2>
+        <p>Una muestra directa de aplicaciones creadas por nuestro equipo y visibles aquí mismo.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- App 1 -->
+        <article class="app-card">
+          <div class="app-preview">
+            <div class="window-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="ui-mock">
+              <div class="ui-row">
+                <div class="ui-pill accent"></div>
+                <div class="ui-pill"></div>
+              </div>
+              <div class="ui-bars">
+                <i class="bar-1"></i>
+                <i class="bar-2"></i>
+                <i class="bar-3"></i>
+                <i class="bar-4"></i>
+                <i class="bar-5"></i>
+              </div>
+            </div>
+          </div>
+          <div class="app-body">
+            <span class="app-type">Aplicación movil · Movilidad</span>
+            <h3>Neza</h3>
+            <p>App movil y add-on integrado en Google Maps como asistente en leyes viales estatales.</p>
+            <div class="stack">
+              <span>Android Studio</span>
+              <span>Google Cloud</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- App 2 -->
+        <article class="app-card">
+          <div class="app-preview">
+            <div class="window-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="ui-mock">
+              <div class="ui-list-item">
+                <span>Entrega #104 · Centro</span>
+                <span class="tag-live">En ruta</span>
+              </div>
+              <div class="ui-list-item">
+                <span>Entrega #105 · Norte</span>
+                <span class="tag-live">Entregado</span>
+              </div>
+              <div class="ui-list-item">
+                <span>Entrega #106 · Sur</span>
+                <span class="tag-live">Programado</span>
+              </div>
+            </div>
+          </div>
+          <div class="app-body">
+            <span class="app-type">Web + Móvil · Logística</span>
+            <h3>RutaClara</h3>
+            <p>Sistema de despacho y seguimiento de pedidos con optimización de rutas y confirmación de entrega.</p>
+            <div class="stack">
+              <span>TypeScript</span>
+              <span>REST API</span>
+              <span>Maps</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- App 3 -->
+        <article class="app-card">
+          <div class="app-preview">
+            <div class="window-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="ui-mock">
+              <div class="ui-row">
+                <div class="ui-pill accent"></div>
+                <div class="ui-pill"></div>
+              </div>
+              <div class="ui-list-item">
+                <span>Consulta Dental · 10:00</span>
+                <span class="tag-live">Confirmada</span>
+              </div>
+              <div class="ui-list-item">
+                <span>Revisión General · 11:30</span>
+                <span class="tag-live">Disponible</span>
+              </div>
+            </div>
+          </div>
+          <div class="app-body">
+            <span class="app-type">SaaS · Agenda y Citas</span>
+            <h3>TurnoListo</h3>
+            <p>Plataforma de reservas en línea con recordatorios automáticos, gestión de horarios y panel para clínicas y estudios.</p>
+            <div class="stack">
+              <span>HTML/CSS</span>
+              <span>Next.js</span>
+              <span>Webhooks</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="container">
+      <div class="cta-box">
+        <div>
+          <h2>¿Tienes una idea o necesitas mejorar tu app?</h2>
+          <p>Escríbenos a <strong>contacto@ariadnalabs.dev</strong> y armamos una propuesta clara en 24 horas.</p>
+        </div>
+        <a href="mailto:contacto@ariadnalabs.dev" class="btn btn-primary">Enviar correo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 NexoLab Software. Todos los derechos reservados.</p>
+      <nav aria-label="Información legal">
+        <a href="#aviso-privacidad">Aviso de privacidad</a>
+        <span> · </span>
+        <a href="#terminos-condiciones">Términos y condiciones</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
